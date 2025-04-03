@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "br.edu.satc.todolistcompose"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "br.edu.satc.todolistcompose"
@@ -52,6 +52,7 @@ android {
 
 dependencies {
 
+    implementation(libs.firebase.firestore.ktx)
     val room_version = "2.6.1"
 
     implementation("androidx.room:room-runtime:$room_version")
